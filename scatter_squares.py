@@ -19,8 +19,8 @@ plt.tick_params(axis='both', which='major', labelsize=14)
 # Set the range for each axis.
 plt.axis([0, 1100, 0, 1100000])
 
-""" 
-To automatically save plot to file, replace plt.show() with 
+"""
+To automatically save plot to file, replace plt.show() with
 plt.savefig()
 """
 # plt.show()
