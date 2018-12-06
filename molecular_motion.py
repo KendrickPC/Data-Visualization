@@ -1,3 +1,10 @@
+"""
+Modify rw_visual.py by replacing plt.scatter with plt.plot().
+To simulate the path of a pollen grain on the surface of a
+drop of water, pass in the rw.x_values and rw.y_values, and
+ include a linewidth argument. Use 5000 instead of 50,000.
+"""
+
 import matplotlib.pyplot as plt
 
 from random_walk import RandomWalk
@@ -7,14 +14,13 @@ Generating multiple random walks. Keep making new walks,
 as long as the program is active.
 """
 while True:
-    rw = RandomWalk(50000)
+    rw = RandomWalk(5000)
     rw.fill_walk()
 
     plt.figure(dpi=128, figsize=(10, 6))
 
     point_numbers = list(range(rw.num_points))
-    plt.scatter(rw.x_values, rw.y_values, c=point_numbers, cmap=plt.cm.Reds,
-                edgecolor='none', s=1)
+    plt.plot(rw.x_values, rw.y_values, linewidth=0.5)
 
     # Emphasize the first and last points.
     # Purple symbolizes first point.
@@ -22,10 +28,9 @@ while True:
     The following code must be entered right before plt.show() so that the
     points are entered on top of the initial plot.
     """
-    plt.scatter(0, 0, c='purple', edgecolors='none', s=100)
+    plt.plot(0, 0, c='purple')
     # Yellow symbolizes last point.
-    plt.scatter(rw.x_values[-1], rw.y_values[-1], c='yellow',
-                edgecolors='none', s=100)
+    plt.plot(rw.x_values[-1], rw.y_values[-1], c='yellow')
 
     # Remove the axes.
     plt.axes().get_xaxis().set_visible(False)
