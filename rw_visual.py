@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-from modified_random_walks import RandomWalk
+from refactoring import RandomWalk
 
 """
 Generating multiple random walks. Keep making new walks,
