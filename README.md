@@ -10,7 +10,7 @@ Step 2: Installing package Pygal.
 
 <!-- Last Ending Point and Beginning Point -->
 Rolling Dice with Pygal
-p. 339
+p. 346
 
 https://stackoverflow.com/questions/52876985/matplotlib-warning-using-pandas-dataframe-plot-scatter
 <!-- 'c' argument looks like a single numeric RGB or RGBA sequence, which should be avoided as value-mapping will have precedence in case its length matches with 'x' & 'y'.  Please use a 2-D array with a single row if you really want to specify the same RGB or RGBA value for all points. -->
