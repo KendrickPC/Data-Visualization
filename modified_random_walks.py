@@ -1,4 +1,4 @@
-# To plot random_walk.py, run rw_visual.py file with Python3.
+# To plot modified_random_walks.py, run rw_visual.py file with Python3.
 
 from random import choice
 
@@ -23,12 +23,12 @@ class RandomWalk():
             Decide which direction to go and how far to go in that
             direction.
             """
-            x_direction = choice([1, -1])
-            x_distance = choice([0, 1, 2, 3, 4])
+            x_direction = choice([27, -27])
+            x_distance = choice([0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11])
             x_step = x_direction * x_distance
 
-            y_direction = choice([1, -1])
-            y_distance = choice([0, 1, 2, 3, 4])
+            y_direction = choice([11, -11])
+            y_distance = choice([-5, -4, -3, -2, -1, 0, 1, 2, 3, 4, 5, 6, 7, 8])
             y_step = y_direction * y_distance
 
             # Reject moves that go nowhere.
