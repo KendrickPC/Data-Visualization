@@ -8,10 +8,11 @@ capabilities.
 # Slow down in processing begins at 1 million rolls in line 20.
 
 import pygal
+
 from die8 import Die
 
 
-# Create a D6
+# Create two D6
 die_1 = Die()
 die_2 = Die()
 
