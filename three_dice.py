@@ -1,1 +1,6 @@
-three_dice.py
+"""
+15-8. Three Dice: If you roll three D6 dice, the smallest number you can
+roll is 3 and the largest number is 18. Create a visualization that
+shows what happens when you roll three D6 dice.
+"""
+
