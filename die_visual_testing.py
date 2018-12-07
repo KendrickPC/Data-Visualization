@@ -1,12 +1,3 @@
-"""
-15-7. Two D8s: Create a simulation showing what happens if you roll
-two eight-sided dice 1000 times. Increase the number of rolls
-gradually until you start to see the limits of your system’s
-capabilities.
-"""
-
-# Slow down in processing begins at 1 million rolls in line 20.
-
 import pygal
 from die8 import Die
 
@@ -17,7 +8,7 @@ die_2 = Die()
 
 # Make some rolls, and store results in a list.
 results = []
-for roll_num in range(1000000):
+for roll_num in range(1000):
     result = die_1.roll() + die_2.roll()
     results.append(result)
 
